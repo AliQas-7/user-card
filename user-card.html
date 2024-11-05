@@ -55,12 +55,12 @@
             document.getElementById('fullName').textContent = user.qrCodeDetails.fullName || 'N/A';
             document.getElementById('age').textContent = user.qrCodeDetails.age || 'N/A';
             document.getElementById('bloodGroup').textContent = user.qrCodeDetails.bloodGroup || 'N/A';
-            document.getElementById('medicines').textContent = user.qrCodeDetails.medicines.join(', ') || 'N/A';
-            document.getElementById('disease').textContent = user.qrCodeDetails.disease.join(', ') || 'N/A';
+            document.getElementById('medicines').textContent = user.qrCodeDetails.medicines ? user.qrCodeDetails.medicines.join(', ') : 'N/A';
+            document.getElementById('disease').textContent = user.qrCodeDetails.diseases ? user.qrCodeDetails.diseases.join(', ') : 'N/A';
             document.getElementById('organDonation').textContent = user.qrCodeDetails.organDonation ? 'Yes' : 'No';
-            document.getElementById('emergencyNumbers').textContent = user.qrCodeDetails.emergencyNumbers.join(', ') || 'N/A';
+            document.getElementById('emergencyNumbers').textContent = user.qrCodeDetails.emergencyNumbers ? user.qrCodeDetails.emergencyNumbers.join(', ') : 'N/A';
             document.getElementById('address').textContent = user.qrCodeDetails.address || 'N/A';
-            document.getElementById('allergies').textContent = user.qrCodeDetails.allergies.join(', ') || 'N/A';
+            document.getElementById('allergies').textContent = user.qrCodeDetails.allergies ? user.qrCodeDetails.allergies.join(', ') : 'N/A';
             document.getElementById('insuranceDetails').textContent = user.qrCodeDetails.insuranceDetails || 'N/A';
             document.getElementById('preferredHospital').textContent = user.qrCodeDetails.preferredHospital || 'N/A';
             document.getElementById('emergencyInstructions').textContent = user.qrCodeDetails.emergencyInstructions || 'N/A';
